@@ -13,10 +13,10 @@ const MyBooking = () => {
         fetch('https://safe-tundra-54858.herokuapp.com/myBookings')
         .then(res =>res.json())
         .then(data => {
-        //const result=data.filter(myBooking => myBooking?.email === user.email)
-        //setMyBookings(result);
+            const result = data.filter(a => a.email === user.email)
+            setMyBookings(result);
+        })
             
-            })
     },[]);
 
     //DELETE
