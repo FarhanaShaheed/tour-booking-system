@@ -1,32 +1,36 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Spinner } from 'react-bootstrap';
 import Service from './../Service/Service';
 
 const Services = () => {
     const [services, setServices] = useState([]);
 
     useEffect(()=>{
-        fetch('/services.json')
+        fetch('http://localhost:5000/services')
         .then(res =>res.json())
         .then(data => setServices(data))
     },[])
     return (
-        <Container>
-        <div id="services">
-        <h2 className="mt-5 animate__animated animate__bounce">Our Services</h2>
-            <p>A medical laboratory or clinical laboratory is a laboratory where tests are carried out on clinical specimens to obtain information about the health of a patient to aid in diagnosis, treatment, and prevention of disease.</p>
-        <Row xs={1} md={3} className="g-4">
+        <>
         {
-            services.map(service => <Service
-                key={service.id}
-                service={service}
-                ></Service>)
+            (services.length !== 0) ? <div className="container">
+            <h2 className="mt-5 animate__animated animate__bounce">Our Services</h2>
+            <Row xs={1} md={3} className="g-4">
+            {
+                services.map(service => <Service
+                    key={service.id}
+                    service={service}
+                    ></Service>)
+            }
+           </Row>
+        </div> : <div className='d-flex justify-content-center m-5 p-5'>
+            <Spinner animation='border' varient ="danger"> </Spinner>
+        </div>
+
         }
-       </Row>
-    </div>
-    </Container>
+        </>
     );
 };
 
