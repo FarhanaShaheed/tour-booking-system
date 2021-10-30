@@ -8,7 +8,7 @@ const Register = () => {
     const{user} = useAuth();
     const{name} = useParams();
     const onSubmit = data =>{
-        fetch('http://localhost:5000/myBookings',{
+        fetch('https://safe-tundra-54858.herokuapp.com/myBookings',{
             method: 'POST',
             headers:{
                 'content-type': 'application/json'

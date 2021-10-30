@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Col, Container, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import './Service.css';
 
 const Service = ({service}) => {
     const{name, img } = service;
@@ -16,7 +17,7 @@ const Service = ({service}) => {
          <Card.Title className="card-title">{name}</Card.Title>
 
          <Link to={`/register/${name}`}>
-         <Button className="detail-button">View Details</Button>
+         <Button className="detail-button">Book Here</Button>
          </Link>
          </Card.Body>
      </Card>

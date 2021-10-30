@@ -7,7 +7,7 @@ const AllBookings = () => {
     const [allBookings, setAllBookings] = useState();
     console.log(allBookings);
     useEffect(()=>{
-        fetch('http://localhost:5000/myBookings')
+        fetch('https://safe-tundra-54858.herokuapp.com/myBookings')
         .then(res =>res.json())
         .then(data =>setAllBookings(data))
     },[])
@@ -16,7 +16,7 @@ const AllBookings = () => {
     const handleDeleteBooking = id =>{
     const procees =window.confirm('Are you sure, you want to delete?');
     if(procees){
-        const url = `http://localhost:5000/myBookings/${id}`
+        const url = `https://safe-tundra-54858.herokuapp.com/myBookings/${id}`
         fetch(url,{
             method: 'DELETE'
         })
@@ -34,6 +34,7 @@ const AllBookings = () => {
         <div>
              <h2>All Bookings:{allBookings?.length}</h2>
              
+             <div className="table-responsive">
              <Table striped bordered hover>
             <thead>
                 <tr>
@@ -59,6 +60,7 @@ const AllBookings = () => {
                 </tbody>)
             }
         </Table> 
+             </div>
              
          
         </div>
@@ -67,6 +69,7 @@ const AllBookings = () => {
 
 export default AllBookings;
 
-
-                    
+/*
+ 
+*/
                     

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Carousel} from 'react-bootstrap';
+import './Banner.css';
 import firstbanner from '../../../Images/Banner/Banner1.jfif'
 import secondbanner from '../../../Images/Banner/Banner2.jfif'
 import thirdbanner from '../../../Images/Banner/Banner3.jfif'
@@ -9,7 +10,7 @@ const Banner = () => {
         
             <div>
             <Carousel>
-  <Carousel.Item>
+  <Carousel.Item className="banner-img">
     <img 
       className="d-block w-100"
       src={firstbanner}

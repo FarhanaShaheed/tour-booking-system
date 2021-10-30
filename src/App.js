@@ -12,6 +12,7 @@ import AllBookings from './Pages/AllBookings/AllBookings';
 import AboutUs from './Pages/About Us/AboutUs';
 import MyBooking from './Pages/MyBooking/MyBooking';
 import Footer from './Pages/Shared/Footer/Footer';
+import NotFound from './Pages/NotFound/NotFound';
 
 
 function App() {
@@ -44,6 +45,9 @@ function App() {
         </Route>
         <Route path="/login">
           <Login></Login>
+        </Route>
+        <Route path="*">
+          <NotFound></NotFound>
         </Route>
       </Switch>
       <Footer></Footer>
