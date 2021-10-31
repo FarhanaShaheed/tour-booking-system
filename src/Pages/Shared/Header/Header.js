@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlane } from '@fortawesome/free-solid-svg-icons'
 import { Container, Nav, Navbar, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from './../../../hooks/useAuth';
@@ -9,11 +11,12 @@ const Header = () => {
         
         <Navbar bg="dark" sticky="top" variant="dark" collapseOnSelect expand="lg">
             <Container>
-            <Navbar.Brand href="#home">Travel Booking</Navbar.Brand>
+            <Navbar.Brand href="#home"><FontAwesomeIcon icon={faPlane} />Travel Booking</Navbar.Brand>
             <Navbar.Toggle/>
             <Navbar.Collapse className="justify-content-end">
             <Nav.Link as={Link} to="/home#home">Home</Nav.Link>
             <Nav.Link as={Link} to="/aboutus">About Us</Nav.Link>
+            <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
             {
                   user?.email && <Nav.Link as={Link} to="/myBookings">Manage Bookings</Nav.Link> 
             }

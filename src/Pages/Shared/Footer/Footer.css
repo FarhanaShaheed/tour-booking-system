@@ -2,6 +2,7 @@
     padding-top: 60px;
     clip-path: ellipse(81% 76% at 51% 80%);
     background-color: black;
-    color: white;
+    color: gray;
     margin: 0 -5px;
+    display: flex;
 }

@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { Container, Row, Spinner } from 'react-bootstrap';
 import Service from './../Service/Service';
+import './Services.css';
 
 const Services = () => {
     const [services, setServices] = useState([]);
@@ -16,7 +17,7 @@ const Services = () => {
         <>
         {
             (services.length !== 0) ? <div className="container">
-            <h2 className="mt-5 animate__animated animate__bounce">Our Services</h2>
+            <h2 className="services-class">Top Notch Destinations</h2>
             <Row xs={1} md={3} className="g-4">
             {
                 services.map(service => <Service

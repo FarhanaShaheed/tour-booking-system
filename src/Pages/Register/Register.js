@@ -2,11 +2,13 @@ import React from 'react';
 import {useForm } from "react-hook-form";
 import { useParams } from 'react-router';
 import useAuth from './../../hooks/useAuth';
+import { Container, Image } from 'react-bootstrap';
+import './Register.css';
 
 const Register = () => {
     const { register, handleSubmit,reset} = useForm();
     const{user} = useAuth();
-    const{name} = useParams();
+    const{name ,img} = useParams();
     const onSubmit = data =>{
         fetch('https://safe-tundra-54858.herokuapp.com/myBookings',{
             method: 'POST',
@@ -24,7 +26,8 @@ const Register = () => {
       })
     }
     return (
-        <div>
+        <Container>
+            <div className="hook-form">
             <h2>You can register here</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
       <input defaultValue={user.displayName} {...register("name")} placeholder="Name"/>
@@ -40,9 +43,10 @@ const Register = () => {
       <br />
       <input defaultValue={name} {...register("destinatio")}/>
       <br />
-      <input type="submit" />
+      <input className="btn-warning" type="submit" />
     </form>
-        </div>
+        </div> 
+        </Container>
     );
 };
 

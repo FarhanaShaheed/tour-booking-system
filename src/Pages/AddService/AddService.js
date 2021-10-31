@@ -33,7 +33,7 @@ const AddService = () => {
                  <br />            
 
                  <br />
-                 <input type="submit" />
+                 <input className="btn-warning" type="submit" />
                  </form>
         </div>
     );
