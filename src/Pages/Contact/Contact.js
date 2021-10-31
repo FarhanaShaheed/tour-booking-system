@@ -26,15 +26,15 @@ const Contact = () => {
                   <img style={{width:'100%'}} src={googleMap} alt="" fluid/>
               </Col>
               </Row>
-              <div className="address-class">
+              <div className="row d-flex align-items-center justify-content-center">
                   
-                  <div>
+                  <div className="col-sm-6">
                      <h3><FontAwesomeIcon icon={faMapMarkerAlt}/> Address: <span>Avenue 234</span></h3>
                      <h3><FontAwesomeIcon icon={faBuilding} /> City: <span>New York-US</span></h3>
                      <h3><FontAwesomeIcon icon={faCheck} /> Check-In: <span>15:00 am</span></h3>
                      
                   </div>
-                  <div>
+                  <div  className="col-sm-6">
                   <h3><FontAwesomeIcon icon={faPhone} /> Phone: <span>374765290293</span></h3>
                      <h3><FontAwesomeIcon icon={faInbox} /> Email: <span>info@travel.com</span></h3>
                      <h3><FontAwesomeIcon icon={faTimes} /> Check-Out: <span>11:00am</span></h3>

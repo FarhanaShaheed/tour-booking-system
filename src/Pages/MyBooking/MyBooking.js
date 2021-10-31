@@ -50,6 +50,7 @@ const MyBooking = () => {
             <th>Address</th>
             <th>Phone</th>
             <th>Destination</th>
+            <th>Action</th>
             </tr>
         </thead>
         {
@@ -71,32 +72,7 @@ const MyBooking = () => {
     </Table>
        </div>
     </div>
-    /* <div>
-      <div className="container my-5">
-        <div className="row">
-          {
-              myBookings?.map(bookings => <div className="col-md-6">
-                  <div className="card-mb-3" style={{"max-width": '540px'}}>
-                    <div className="row g-0">
-                       <div className="col-md-4">
-                         <img src={bookings?.img} alt="" className="img-fluid rounded-start" />
-                       </div>
-                       <div className="col-md-8">
-                          <div className="card-body">
-                                <h5>{bookings?.name} </h5>
-                                <p>{bookings?.email}</p>
-                                <p>{bookings?.address}</p>
-                                <p>{bookings?.destinatio}</p>
-                                <Button onClick={()=> handleDeletemyBooking(bookings._id)}>Cancel</Button>
-                          </div>
-                       </div>
-                    </div>
-                  </div>
-              </div>)
-          }
-        </div>
-      </div>
-    </div> */
+    
         
     );
 };

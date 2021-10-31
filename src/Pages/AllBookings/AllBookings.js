@@ -43,6 +43,7 @@ const AllBookings = () => {
                 <th>Address</th>
                 <th>Phone</th>
                 <th>Destination</th>
+                <th>Action</th>
                 </tr>
             </thead>
             {

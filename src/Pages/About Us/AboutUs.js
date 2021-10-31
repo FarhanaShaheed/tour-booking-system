@@ -27,9 +27,7 @@ const AboutUs = () => {
 
                 </Row>
             </div>
-            <div>
-                
-            </div>
+            
             </Container>
         </div>
     );
