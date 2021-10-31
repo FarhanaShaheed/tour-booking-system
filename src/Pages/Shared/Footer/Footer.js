@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons'
 import './Footer.css';
 
 const Footer = () => {
@@ -13,6 +15,9 @@ const Footer = () => {
              <div className="col-sm-4">
                  <h4>Connect Wth Us</h4>
                  <p>SOCIAL MEDIA CHANNELS</p>
+                 <FontAwesomeIcon icon={faEnvelopeOpen} />
+                 
+
              </div>
              <div className="col-sm-4">
                  <h4>NEWSTELLER</h4>
