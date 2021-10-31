@@ -1,3 +1,7 @@
 .services-class {
     margin: 40px;
 }
+
+h2:hover {
+    color: darkslateblue;
+}
