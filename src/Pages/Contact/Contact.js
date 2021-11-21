@@ -12,7 +12,7 @@ const Contact = () => {
                 <h2>Contact Us for Any Query</h2>
               <Row className="m-5">
               <Col xs={12} md={6} className="message-class">
-               <h2>Drop us a line</h2>
+               <h2>Drop us your Feedback</h2>
                <form action="">
                    <input type="text" placeholder="Name"/>
                    <br />
