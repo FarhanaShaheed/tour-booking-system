@@ -8,9 +8,9 @@ const Header = () => {
     const {user,logOut} = useAuth();
     return (
         
-        <Navbar bg="light" sticky="top" variant="light" collapseOnSelect expand="lg">
+        <Navbar bg="dark" sticky="top" variant="dark" collapseOnSelect expand="lg">
             <Container>
-            <Navbar.Brand href="#home"> <img className="header-img" src="https://i.ibb.co/gtTVSJG/download.png" alt="" /> Tour Booking</Navbar.Brand>
+            <Navbar.Brand href="#home"> <img className="header-img" src="https://thumbs.dreamstime.com/b/airplane-flat-icon-black-background-black-style-vector-illustration-airplane-flat-icon-black-background-black-style-vector-168420157.jpg" alt="" /> Tour Booking</Navbar.Brand>
             <Navbar.Toggle/>
             <Navbar.Collapse className="justify-content-end">
             <Nav.Link as={Link} to="/home#home">Home</Nav.Link>
