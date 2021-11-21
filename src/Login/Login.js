@@ -18,8 +18,10 @@ const Login = () => {
     }
     return (
         <Container className="login-class">
-            <h2 className="login">Login here</h2>
+            <h2 className="login">Login Here</h2>
             <Button className="mt-5" onClick={handleGoogleLogin}>Google Sign In</Button>
+            <img className="google-img" src="https://static.guim.co.uk/sys-images/Guardian/Pix/maps_and_graphs/2011/11/14/1321289731486/Google-logo-007.jpg" alt="" />
+            
         </Container>
     );
 };

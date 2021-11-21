@@ -1,9 +1,8 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlane } from '@fortawesome/free-solid-svg-icons'
 import { Container, Nav, Navbar, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from './../../../hooks/useAuth';
+import './Header.css';
 
 const Header = () => {
     const {user,logOut} = useAuth();
@@ -11,7 +10,7 @@ const Header = () => {
         
         <Navbar bg="light" sticky="top" variant="light" collapseOnSelect expand="lg">
             <Container>
-            <Navbar.Brand href="#home"><FontAwesomeIcon icon={faPlane} />Tour Booking</Navbar.Brand>
+            <Navbar.Brand href="#home"> <img className="header-img" src="https://i.ibb.co/gtTVSJG/download.png" alt="" /> Tour Booking</Navbar.Brand>
             <Navbar.Toggle/>
             <Navbar.Collapse className="justify-content-end">
             <Nav.Link as={Link} to="/home#home">Home</Nav.Link>
