@@ -9,7 +9,7 @@ const Header = () => {
     const {user,logOut} = useAuth();
     return (
         
-        <Navbar bg="dark" sticky="top" variant="dark" collapseOnSelect expand="lg">
+        <Navbar bg="light" sticky="top" variant="light" collapseOnSelect expand="lg">
             <Container>
             <Navbar.Brand href="#home"><FontAwesomeIcon icon={faPlane} />Tour Booking</Navbar.Brand>
             <Navbar.Toggle/>
@@ -30,9 +30,13 @@ const Header = () => {
             {
             user?.email && <Nav.Link as={Link} to="/addservice">Add Service</Nav.Link>
             }
+            {
+            user?.email && 
             <Navbar.Text>
-                sign: <a href="#login">{user?.displayName}</a>
+            sign: <a href="#login">{user?.displayName}</a>
             </Navbar.Text>
+            }
+            
             </Navbar.Collapse>
             </Container>
         </Navbar>

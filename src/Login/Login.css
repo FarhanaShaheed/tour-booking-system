@@ -1,3 +1,12 @@
 .login-class {
     height: 400px;
+    width: 300px;
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.login {
+    padding-top: 50px;
 }

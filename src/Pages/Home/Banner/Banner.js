@@ -9,6 +9,7 @@ const Banner = () => {
     return (
       <div>
         <Image src={banner} style={{'height':'75vh', 'width':'100%'}} fluid ></Image>
+        <h2 className="centered">We Make Your Tour Special </h2>
       </div>
     );
 };

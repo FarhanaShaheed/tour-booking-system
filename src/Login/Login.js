@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
 import { useHistory, useLocation } from 'react-router';
 import useAuth from './../hooks/useAuth';
 import './Login.css';
@@ -17,10 +17,10 @@ const Login = () => {
         })
     }
     return (
-        <div className="login-class">
-            <h2>You can Login here Using Your Google Account</h2>
-            <Button onClick={handleGoogleLogin}>Google Sign In</Button>
-        </div>
+        <Container className="login-class">
+            <h2 className="login">Login here</h2>
+            <Button className="mt-5" onClick={handleGoogleLogin}>Google Sign In</Button>
+        </Container>
     );
 };
 
