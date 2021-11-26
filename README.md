@@ -2,22 +2,22 @@
 
 This project was bootstrapped with [Tour Booking System ](https://travel-booking-online.web.app).
 
-## travel booking system
+## tour booking system
 
-In the project directory, you can run find some travel places and  have use firebase and react. 
-
-### mongodb
-
-i have keep all the data in the mongodb site and fetch it.
+In the project directory, you can find some travel places and also can book any place.  
 
 ### firebase Authentication
 
-by using the firebase authentication i have creates a login button.
+By using the firebase authentication I have created a Signin button. After the successful signin the user can see able to see his all bookings. 
 
 ### private route
 
-here is also a private route. people have to login first if anyone want to book any service.
+Here is also a private route. people have to login first if anyone want to book any service.
 
 ### delete button
 
-Another interesting part is delete button.admin and user can delete their bookings.
+Another interesting part is delete button.Admin and user can delete their bookings.
+
+### Responsiveness
+
+This website is responsive for mobile, tablet and Computer 
